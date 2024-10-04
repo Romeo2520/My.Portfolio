@@ -1,0 +1,33 @@
+---
+import "../styles/components/about-home.css";
+import Button from "./Button.astro";
+import CardTerminal from "../layouts/CardTerminal.astro";
+import CardAbout from "./CardAbout.astro";
+import TitleSpan from "./atoms/TitleSpan.astro";
+---
+
+<section class="about" id="about">
+	<TitleSpan  text1="Who is Roméo" span="Dev" text2="?" />
+	<div class="about__container">
+		<CardAbout />
+		<div class="terminal__container">
+			<CardTerminal animation="fade-left">
+				<h3 class="terminal__content terminal__content--h3">≥ GOSSOU BAH Z. Roméo</h3>
+				<p class="terminal__content terminal__content--p">≥ Enthusiast of building businesses. 😍. Always looking for a way to make more money.</p>
+
+				<h3 class="terminal__content terminal__content--h3">
+					≥ What <span class="terminal__content terminal__content--span span__dark">defines me ?</span>
+				</h3>
+				<p class="terminal__content terminal__content--p">
+					≥ I genuinely <span class="terminal__content--span span__dark">love what I do! 🖤</span> I believe
+					we live in a world where certain things have become indispensable, and technology is one of them.
+					Therefore, coding is also essential.. <span class="terminal__content--span span__dark">
+				</p>
+				<div class="about__contactar">
+					<Button href="/about" text="See more" />
+				</div>
+			</CardTerminal>
+		</div>
+
+	</div>
+</section>

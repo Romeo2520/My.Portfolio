@@ -1,0 +1,48 @@
+---
+import "../styles/components/hero.css";
+import DarkBg from "./DarkBg.astro";
+import HeroIcons from "./HeroIcons.astro";
+---
+<section class="hero" id="hero" transition:persist>
+  <div class="hero__contenedor">
+    <div class="hero__saludo">
+      <h1
+        class="hero__titulo"
+        id="titulo-saludo"
+        data-section="hero"
+        data-value="heroTitulo"
+      >
+        Hi! I'm Roméo <span class="flicker-in-1 span__dark">Dev</span>
+      </h1>
+      <h2
+        class="hero__subtitulo"
+        id="subtitulo"
+        data-section="hero"
+        data-value="heroSubtitulo"
+      >
+        ≥ Frontend developer / Designer UI/UX  <span class="hero__subtitulo--span"
+          >Benin</span
+        >
+      </h2>
+    </div>
+    <aside class="side__container">
+      <img
+        class="side__img img__ligth"
+        src="./public/img/Ellipse 20.svg"
+        alt="Sofidev profile photo"
+      />
+      <img
+        class="side__img img__dark"
+        src="./public/img/Ellipse 20.svg"
+        alt="Sofidev profile photo"
+      />
+      <!-- <img
+        class="side__img img__damage"
+        src="./img/IA_damage.webp"
+        alt="Sofidev profile photo"
+      /> -->
+      <HeroIcons />
+    </aside>
+  </div>
+  <DarkBg />
+</section>

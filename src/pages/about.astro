@@ -1,0 +1,116 @@
+---
+import "../styles/about-section.css";
+import "../styles/about-section.css";
+import YoutubeLastvid from "../components/YoutubeLastvid.astro";
+import BaseHead from "../components/BaseHead.astro";
+import ToogleDarkBtn from "../ToggleDarkBtn.astro";
+import BtnToTop from "../components/BtnToTop.astro";
+import Footer from "../components/Footer.astro";
+import DarkBg from "../components/DarkBg.astro";
+import NavLinks from "../components/NavLinks.astro";
+import CardTerminal from "../layouts/CardTerminal.astro";
+import ContactSocialIcons from "../components/ContactSocialIcons.astro";
+import VsCodeTheme from "../components/VsCodeTheme.astro";
+import Divider4 from "../components/atoms/Dividers/Divider4.astro";
+import { about } from "../data/MenuData";
+import DividerTop from "../components/atoms/Dividers/DividerTop.astro";
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <NavLinks origin={about} />
+    <ToogleDarkBtn />
+    <BtnToTop />
+    <main>
+      <section class="about__intro" id="about">
+        <div class="about__imageIcons" ata-aos="fade-up">
+          <img
+            class="about__profile"
+            src="public/img/me.jpeg"
+            alt="sofidev picture"
+          />
+          <div class="icons__container">
+            <ContactSocialIcons />
+          </div>
+        </div>
+        <CardTerminal>
+          <h2 class="about__titulo--post post__titulo">
+            GOSSOU <span class="span__dark" id="span-titulo2"> BAH</span> Romeo
+          </h2>
+          <p class="terminal__content terminal__content--p">
+            ≥ If I were asked to highlight a single quality in myself, it would
+            be
+            <span class="terminal__content terminal__content--span"
+              >the love for what I do.</span
+            > Entrepreneurship, in particular, is something I enjoy for the sheer
+            pleasure of being financially independent.
+          </p>
+          <p class="terminal__content terminal__content--color">
+            As a frontend developer, I consider myself an artisan of CSS. I take
+            joy in crafting beautiful and interactive visuals.
+          </p>
+          <p class="terminal__content terminal__content--p">
+            I studied in the "Epitech Coding Academy" program, where I had the
+            opportunity to <span
+              class="terminal__content terminal__content--span"
+            >
+              deepen my understanding of what it means to be "A developer".
+              Throughout this program, I gained practical skills in coding,
+              problem-solving, and teamwork, all of which are essential in the
+              tech industry. This experience not only enhanced my knowledge but
+              also allowed me to support my peers on their journeys to becoming
+              developers, fostering a collaborative learning environment.
+            </span>
+            <p class="terminal__content terminal__content--color">
+              I engaged in various projects that challenged me to think
+              critically and creatively, and I learned to navigate real-world
+              coding scenarios. This collaborative atmosphere encouraged me to
+              mentor others, sharing insights and techniques to help them
+              overcome challenges. Ultimately, the program instilled in me a
+              strong sense of community and a passion for continuous learning in
+              the ever-evolving field of technology.
+            </p>
+          </p>
+        </CardTerminal>
+        <Divider4 />
+        <VsCodeTheme />
+        <DividerTop
+          colorLight="fill__black"
+          colorDark="dark__black"
+          dividerBg="black"
+          dividerBgDark=""
+        />
+        <section class="about__page" id="ytChannel">
+          <YoutubeLastvid />
+        </section>
+        <section class="about__text"></section>
+      </section>
+      <DarkBg />
+      <Footer />
+      <style>
+        .about__page {
+          width: 100%;
+          padding: 1rem 0.4rem 0 0.4rem;
+          height: auto;
+        }
+        .post__titulo {
+          color: white;
+        }
+        .text_content {
+          color: white;
+        }
+        @media screen and (min-width: 768px) {
+          .about__page {
+            width: 100%;
+            padding: 1rem 2rem 0 2rem;
+            height: auto;
+          }
+        }
+      </style>
+    </main>
+  </body>
+</html>
