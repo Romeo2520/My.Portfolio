@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build": "astro build",
+    "deploy": "npm run build && git add dist && git commit -m 'Update deployment' && git push origin main"
+
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
