@@ -8,6 +8,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  base: '/My.Portfolio/',
   markdown: {
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
