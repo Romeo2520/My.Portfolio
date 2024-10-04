@@ -2,6 +2,7 @@
   "name": "sofidev-portfolio-astro",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://Romeo2502.github.io/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
