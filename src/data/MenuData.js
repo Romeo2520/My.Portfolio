@@ -3,7 +3,7 @@ export const links = [
   { href: "#tools", text: "Tools" },
   { href: "#about", text: "About" },
   { href: "#portafolio", text: "Portfolio" },
-  { href: "#blog", text: "Post" },
+  { href: "#blog", text: "Hobby" },
 ];
 export const about = [
   { href: "/", text: "Home" },
